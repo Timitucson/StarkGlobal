@@ -1,229 +1,248 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StarkGlobal - Protección integral contra amenazas cibernéticas para estaciones de servicio, empresas agrícolas y pymes en Daireaux.">
-    <meta name="keywords" content="ciberseguridad, Daireaux, Fortinet, QRadar, auditorías de seguridad">
-    <meta name="author" content="StarkGlobal">
-    <title>StarkGlobal | Ciberseguridad para Empresas en Daireaux</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CeliGo — Encontrá locales sin TACC cerca tuyo. Descuentos exclusivos con CeliGo Socio. Dietéticas, restaurantes, panaderías y más.">
+  <title>CeliGo — Locales y beneficios sin TACC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo-celigo.png" type="image/png">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="nav-container">
-        <div class="nav-logo">
-            <img src="logo-starkglobal.png" alt="Logo StarkGlobal" width="150">
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#casos">Casos</a></li>
-            <li><a href="#contacto" class="nav-cta">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="inicio">
-        <div class="hero-content">
-            <h1>Protegemos tu negocio contra amenazas cibernéticas</h1>
-            <p class="hero-subtitle">Soluciones avanzadas de seguridad para empresas en Daireaux y zona agrícola</p>
-            <div class="hero-cta">
-                <a href="#contacto" class="btn-primary">Consulta Gratuita</a>
-                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
-            </div>
-        </div>
-        <div class="hero-video">
-            <video autoplay muted loop>
-                <source src="security-animation.mp4" type="video/mp4">
-            </video>
-        </div>
-    </header>
+  <!-- HEADER estilo PedidosYa -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="brand">
+        <img src="assets/logo-celigo.png" alt="CeliGo" class="brand-logo" onerror="this.style.display='none'">
+        <span class="brand-text">Celi<span>Go</span></span>
+      </a>
 
-    <!-- Sección Nosotros -->
-    <section class="about-section" id="nosotros">
-        <div class="about-content">
-            <h2 class="section-title">Expertos en Protección Digital</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="highlight">En StarkGlobal combinamos tecnología de punta con conocimiento local para proteger lo que más importa: su negocio.</p>
-                    <div class="certifications">
-                        <h3>Certificaciones Oficiales:</h3>
-                        <div class="cert-logos">
-                            <img src="fortinet-cert.png" alt="Certificación Fortinet">
-                            <img src="ibm-cert.png" alt="Certificación IBM">
-                            <img src="aws-cert.png" alt="Certificación AWS">
-                        </div>
-                    </div>
-                </div>
-                <div class="about-team">
-                    <div class="team-member">
-                        <img src="nicolas-perez.jpg" alt="Nicolás Pérez">
-                        <h4>Nicolás Pérez</h4>
-                        <p>Especialista en Infraestructura Segura</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="lucas-martinez.jpg" alt="Lucas Martínez">
-                        <h4>Lucas Martínez</h4>
-                        <p>Experto en Respuesta a Incidentes</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <button class="location-btn" type="button" aria-label="Cambiar ubicación">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Longchamps</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" placeholder="Buscar empanadas, panaderías, alfajores..." aria-label="Buscar">
+      </div>
+
+      <div class="header-actions">
+        <a href="#comercio" class="btn-outline">Adherí tu comercio</a>
+        <a href="#socio" class="btn-primary">Solicitá tu tarjeta</a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#socio" class="btn-primary">Solicitá tu tarjeta</a>
+    <a href="#comercio" class="btn-outline">Adherí tu comercio</a>
+    <a href="#locales">Locales cerca</a>
+    <a href="#categorias">Categorías</a>
+  </div>
+
+  <main class="container">
+
+    <!-- BANNER CELIGO SOCIO -->
+    <section class="banner-socio" id="socio">
+      <div class="banner-text">
+        <h2>Ahorrá en cada compra con CeliGo Socio</h2>
+        <p>Mostrá tu credencial digital y accedé a descuentos exclusivos en locales verificados sin TACC. Membresía $2.500/mes.</p>
+      </div>
+      <a href="#" class="btn-primary btn-white">Solicitá tu tarjeta</a>
     </section>
 
-    <!-- Servicios Mejorados -->
-    <section class="services-section" id="servicios">
-        <h2 class="section-title">Nuestras Soluciones</h2>
-        <div class="services-grid">
-            <article class="service-card">
-                <div class="service-icon">
-                    <img src="shield-icon.svg" alt="Protección">
-                </div>
-                <h3>Auditorías de Seguridad</h3>
-                <ul class="service-features">
-                    <li>Análisis de vulnerabilidades</li>
-                    <li>Informe técnico detallado</li>
-                    <li>Plan de acción personalizado</li>
-                </ul>
-                <a href="#contacto" class="service-cta">Proteger mi red →</a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-icon">
-                    <img src="firewall-icon.svg" alt="Firewall">
-                </div>
-                <h3>Firewalls FortiGate</h3>
-                <ul class="service-features">
-                    <li>Instalación profesional</li>
-                    <li>Configuración adaptada</li>
-                    <li>Soporte 24/7</li>
-                </ul>
-                <a href="#contacto" class="service-cta">Consultar precios →</a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-icon">
-                    <img src="monitoring-icon.svg" alt="Monitoreo">
-                </div>
-                <h3>Monitoreo QRadar</h3>
-                <ul class="service-features">
-                    <li>Detección en tiempo real</li>
-                    <li>Alertas automáticas</li>
-                    <li>Informes mensuales</li>
-                </ul>
-                <a href="#contacto" class="service-cta">Comenzar monitoreo →</a>
-            </article>
-        </div>
+    <!-- CATEGORÍAS -->
+    <h2 class="section-title" id="categorias">¿Qué estás buscando?</h2>
+    <section class="categories">
+      <button class="cat-card" type="button">
+        <span class="cat-icon">🥐</span>
+        <span class="cat-name">Panadería</span>
+      </button>
+      <button class="cat-card" type="button">
+        <span class="cat-icon">🍕</span>
+        <span class="cat-name">Restaurantes</span>
+      </button>
+      <button class="cat-card" type="button">
+        <span class="cat-icon">☕</span>
+        <span class="cat-name">Cafeterías</span>
+      </button>
+      <button class="cat-card" type="button">
+        <span class="cat-icon">🥑</span>
+        <span class="cat-name">Dietéticas</span>
+      </button>
+      <button class="cat-card" type="button">
+        <span class="cat-icon">🍨</span>
+        <span class="cat-name">Heladerías</span>
+      </button>
     </section>
 
-    <!-- Casos de Éxito Interactivos -->
-    <section class="case-studies" id="casos">
-        <h2 class="section-title">Protección que marca la diferencia</h2>
-        <div class="case-carousel">
-            <div class="case-item">
-                <div class="case-content">
-                    <h3>Estación de Servicio Protegida</h3>
-                    <div class="case-details">
-                        <div class="case-problem">
-                            <h4>Problema:</h4>
-                            <p>Ataques recurrentes paralizaban operaciones</p>
-                        </div>
-                        <div class="case-solution">
-                            <h4>Solución:</h4>
-                            <p>Firewall FortiGate + Capacitación del personal</p>
-                        </div>
-                    </div>
-                    <div class="case-results">
-                        <div class="result-item">
-                            <span class="result-number">0</span>
-                            <span class="result-text">incidentes últimos 6 meses</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- GRILLA DE LOCALES -->
+    <div class="section-header-row">
+      <h2 class="section-title" id="locales">Locales destacados cerca tuyo</h2>
+      <a href="#" class="link-more">Ver todos →</a>
+    </div>
+
+    <section class="stores-grid">
+
+      <article class="store-card">
+        <span class="badge">100% Sin TACC</span>
+        <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80')"></div>
+        <div class="store-content">
+          <div class="store-header">
+            <h3 class="store-title">Pain Du Jour</h3>
+            <span class="rating">★ 4.8</span>
+          </div>
+          <p class="store-subtitle">Panadería · Pastelería artesanal</p>
+          <div class="benefit-tag">🎁 10% OFF CeliGo Socio</div>
+          <div class="store-footer">
+            <span>🛵 20-35 min</span>
+            <span>📍 1.2 km</span>
+          </div>
         </div>
+      </article>
+
+      <article class="store-card">
+        <span class="badge badge-alt">Cocina exclusiva</span>
+        <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80')"></div>
+        <div class="store-content">
+          <div class="store-header">
+            <h3 class="store-title">Lo de Carlitos GF</h3>
+            <span class="rating">★ 4.9</span>
+          </div>
+          <p class="store-subtitle">Restaurante · Pizzas y pastas</p>
+          <div class="benefit-tag">🎁 15% OFF en efectivo</div>
+          <div class="store-footer">
+            <span>🛵 30-45 min</span>
+            <span>📍 2.5 km</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="store-card">
+        <span class="badge">100% Sin TACC</span>
+        <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80')"></div>
+        <div class="store-content">
+          <div class="store-header">
+            <h3 class="store-title">Zeta Café</h3>
+            <span class="rating">★ 4.7</span>
+          </div>
+          <p class="store-subtitle">Cafetería · Especialidad</p>
+          <div class="benefit-tag">🎁 Café de regalo en tu cumple</div>
+          <div class="store-footer">
+            <span>🛵 15-25 min</span>
+            <span>📍 0.8 km</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="store-card">
+        <span class="badge">100% Sin TACC</span>
+        <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80')"></div>
+        <div class="store-content">
+          <div class="store-header">
+            <h3 class="store-title">Natural Market</h3>
+            <span class="rating">★ 4.6</span>
+          </div>
+          <p class="store-subtitle">Dietética · Productos sin TACC</p>
+          <div class="benefit-tag">🎁 10% OFF en toda la tienda</div>
+          <div class="store-footer">
+            <span>🛵 25-40 min</span>
+            <span>📍 1.8 km</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="store-card">
+        <span class="badge badge-alt">Verificado</span>
+        <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80')"></div>
+        <div class="store-content">
+          <div class="store-header">
+            <h3 class="store-title">Dulce Sin</h3>
+            <span class="rating">★ 4.9</span>
+          </div>
+          <p class="store-subtitle">Heladería · Sin gluten</p>
+          <div class="benefit-tag">🎁 2x1 en copas los martes</div>
+          <div class="store-footer">
+            <span>🛵 15-30 min</span>
+            <span>📍 1.1 km</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="store-card">
+        <span class="badge">100% Sin TACC</span>
+        <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80')"></div>
+        <div class="store-content">
+          <div class="store-header">
+            <h3 class="store-title">Verde Mesa</h3>
+            <span class="rating">★ 4.5</span>
+          </div>
+          <p class="store-subtitle">Restaurante · Cocina saludable</p>
+          <div class="benefit-tag">🎁 12% OFF CeliGo Socio</div>
+          <div class="store-footer">
+            <span>🛵 35-50 min</span>
+            <span>📍 3.2 km</span>
+          </div>
+        </div>
+      </article>
+
     </section>
 
-    <!-- Sección Contacto Mejorada -->
-    <section class="contact-section" id="contacto">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2 class="section-title">¿Listo para proteger su negocio?</h2>
-                <div class="info-item">
-                    <h3>📍 Ubicación</h3>
-                    <p>Acceso Carle 980, Daireaux, BA</p>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-61.747222!3d-36.603333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM2JzEyLjAiUyA2McKwNDQnNTAuMCJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar" 
-                        allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <h3>📞 Contacto Directo</h3>
-                    <p><a href="tel:+541123986160">+54 11 2398 6160</a></p>
-                    <p><a href="mailto:piksy.co1@gmail.com">piksy.co1@gmail.com</a></p>
-                </div>
-            </div>
-            
-            <form class="contact-form" action="https://formspree.io/f/piksy.co1@gmail.com" method="POST">
-                <div class="form-group">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="telefono" placeholder="Teléfono">
-                </div>
-                <div class="form-group">
-                    <select name="servicio" required>
-                        <option value="">Seleccione servicio</option>
-                        <option value="auditoria">Auditoría de Seguridad</option>
-                        <option value="firewall">Firewall FortiGate</option>
-                        <option value="monitoreo">Monitoreo QRadar</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea name="mensaje" placeholder="Cuéntenos sobre su proyecto..." rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Consulta</button>
-            </form>
-        </div>
+    <!-- BANNER ADHERÍ TU COMERCIO -->
+    <section class="banner-b2b" id="comercio">
+      <div>
+        <h2>Adherí tu comercio gratis</h2>
+        <p>Sumá tu local apto para celíacos, ofrecé un beneficio y recibí más clientes con CeliGo. Kit de bienvenida incluido.</p>
+      </div>
+      <a href="#" class="btn-primary">Adherí tu comercio →</a>
     </section>
 
-    <!-- Pie de Página -->
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>StarkGlobal</h4>
-                <p>Especialistas en seguridad digital para empresas regionales</p>
-                <p>RNPI: 123456789</p>
-            </div>
-            <div class="footer-section">
-                <h4>Servicios</h4>
-                <ul>
-                    <li><a href="#servicios">Protección de Redes</a></li>
-                    <li><a href="#servicios">Seguridad Cloud</a></li>
-                    <li><a href="#servicios">Respuesta a Incidentes</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Términos de Servicio</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 StarkGlobal. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+  </main>
 
-    <script src="app.js"></script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <img src="assets/logo-celigo.png" alt="CeliGo" class="brand-logo brand-logo-sm" onerror="this.style.display='none'">
+          <span class="brand-text">Celi<span>Go</span></span>
+        </a>
+        <p>Directorio de locales sin TACC y tarjeta de beneficios para celíacos.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Para vos</h4>
+        <a href="#socio">Ser Socio</a>
+        <a href="#locales">Locales cerca</a>
+        <a href="#categorias">Categorías</a>
+      </div>
+      <div class="footer-col">
+        <h4>Para comercios</h4>
+        <a href="#comercio">Adherí tu comercio</a>
+        <a href="#">Kit Go</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Privacidad</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 CeliGo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
