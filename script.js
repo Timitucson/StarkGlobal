@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Menú mobile
   const toggle = document.getElementById('menuToggle');
   const menu = document.getElementById('mobileMenu');
 
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Buscador
   const searchInput = document.getElementById('searchInput');
   const cards = document.querySelectorAll('.store-card');
   const noResults = document.getElementById('noResults');
@@ -37,24 +35,18 @@ document.addEventListener('DOMContentLoaded', function () {
       card.style.display = match ? '' : 'none';
       if (match) visible++;
     });
-    if (noResults) {
-      noResults.hidden = visible > 0;
-    }
+    if (noResults) noResults.hidden = visible > 0;
   }
 
-  if (searchInput) {
-    searchInput.addEventListener('input', filterCards);
-  }
+  if (searchInput) searchInput.addEventListener('input', filterCards);
 
-  // Filtro por categoría
   document.querySelectorAll('.cat-card').forEach(function (btn) {
     btn.addEventListener('click', function () {
       const cat = btn.getAttribute('data-cat');
       if (searchInput) searchInput.value = '';
       let visible = 0;
       cards.forEach(function (card) {
-        const cardCat = card.getAttribute('data-cat');
-        const match = cardCat === cat;
+        const match = card.getAttribute('data-cat') === cat;
         card.style.display = match ? '' : 'none';
         if (match) visible++;
       });
