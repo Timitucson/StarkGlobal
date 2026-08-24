@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <!-- HEADER estilo PedidosYa -->
+  <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
       <a href="#" class="brand">
@@ -29,12 +29,12 @@
 
       <div class="search-box">
         <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        <input type="search" placeholder="Buscar empanadas, panaderías, alfajores..." aria-label="Buscar">
+        <input type="search" id="searchInput" placeholder="Buscar locales, panaderías, dietéticas..." aria-label="Buscar">
       </div>
 
       <div class="header-actions">
-        <a href="#comercio" class="btn-outline">Adherí tu comercio</a>
-        <a href="#socio" class="btn-primary">Solicitá tu tarjeta</a>
+        <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20adherir%20mi%20comercio%20a%20CeliGo" class="btn-outline" target="_blank" rel="noopener">Adherí tu comercio</a>
+        <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20solicitar%20mi%20tarjeta%20CeliGo" class="btn-primary" target="_blank" rel="noopener">Solicitá tu tarjeta</a>
       </div>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Menú">
@@ -44,57 +44,60 @@
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#socio" class="btn-primary">Solicitá tu tarjeta</a>
-    <a href="#comercio" class="btn-outline">Adherí tu comercio</a>
+    <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20solicitar%20mi%20tarjeta%20CeliGo" class="btn-primary" target="_blank" rel="noopener">Solicitá tu tarjeta</a>
+    <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20adherir%20mi%20comercio%20a%20CeliGo" class="btn-outline" target="_blank" rel="noopener">Adherí tu comercio</a>
     <a href="#locales">Locales cerca</a>
     <a href="#categorias">Categorías</a>
+    <a href="#faq">Preguntas frecuentes</a>
   </div>
 
   <main class="container">
 
-    <!-- BANNER CELIGO SOCIO -->
+    <!-- BANNER SOCIO -->
     <section class="banner-socio" id="socio">
       <div class="banner-text">
         <h2>Ahorrá en cada compra con CeliGo Socio</h2>
-        <p>Mostrá tu credencial digital y accedé a descuentos exclusivos en locales verificados sin TACC. Membresía $2.500/mes.</p>
+        <p>Mostrá tu credencial digital y accedé a descuentos exclusivos en locales verificados sin TACC. Membresía <strong>$2.900/mes</strong>.</p>
       </div>
-      <a href="#" class="btn-primary btn-white">Solicitá tu tarjeta</a>
+      <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20solicitar%20mi%20tarjeta%20CeliGo" class="btn-primary btn-white" target="_blank" rel="noopener">Solicitá tu tarjeta</a>
     </section>
 
     <!-- CATEGORÍAS -->
     <h2 class="section-title" id="categorias">¿Qué estás buscando?</h2>
     <section class="categories">
-      <button class="cat-card" type="button">
+      <button class="cat-card" type="button" data-cat="panaderia">
         <span class="cat-icon">🥐</span>
         <span class="cat-name">Panadería</span>
       </button>
-      <button class="cat-card" type="button">
+      <button class="cat-card" type="button" data-cat="restaurante">
         <span class="cat-icon">🍕</span>
         <span class="cat-name">Restaurantes</span>
       </button>
-      <button class="cat-card" type="button">
+      <button class="cat-card" type="button" data-cat="cafeteria">
         <span class="cat-icon">☕</span>
         <span class="cat-name">Cafeterías</span>
       </button>
-      <button class="cat-card" type="button">
+      <button class="cat-card" type="button" data-cat="dietetica">
         <span class="cat-icon">🥑</span>
         <span class="cat-name">Dietéticas</span>
       </button>
-      <button class="cat-card" type="button">
+      <button class="cat-card" type="button" data-cat="heladeria">
         <span class="cat-icon">🍨</span>
         <span class="cat-name">Heladerías</span>
       </button>
     </section>
 
-    <!-- GRILLA DE LOCALES -->
+    <!-- LOCALES -->
     <div class="section-header-row">
       <h2 class="section-title" id="locales">Locales destacados cerca tuyo</h2>
-      <a href="#" class="link-more">Ver todos →</a>
+      <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20ver%20todos%20los%20locales%20CeliGo" class="link-more" target="_blank" rel="noopener">Ver todos →</a>
     </div>
 
-    <section class="stores-grid">
+    <p id="noResults" class="no-results" hidden>No encontramos locales con esa búsqueda.</p>
 
-      <article class="store-card">
+    <section class="stores-grid" id="storesGrid">
+
+      <a class="store-card" href="https://wa.me/5491160224830?text=Hola!%20Vi%20Pain%20Du%20Jour%20en%20CeliGo%20y%20quiero%20consultar" target="_blank" rel="noopener" data-name="pain du jour panaderia pasteleria" data-cat="panaderia">
         <span class="badge">100% Sin TACC</span>
         <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80')"></div>
         <div class="store-content">
@@ -109,9 +112,9 @@
             <span>📍 1.2 km</span>
           </div>
         </div>
-      </article>
+      </a>
 
-      <article class="store-card">
+      <a class="store-card" href="https://wa.me/5491160224830?text=Hola!%20Vi%20Lo%20de%20Carlitos%20GF%20en%20CeliGo%20y%20quiero%20consultar" target="_blank" rel="noopener" data-name="lo de carlitos gf restaurante pizzas pastas" data-cat="restaurante">
         <span class="badge badge-alt">Cocina exclusiva</span>
         <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80')"></div>
         <div class="store-content">
@@ -126,9 +129,9 @@
             <span>📍 2.5 km</span>
           </div>
         </div>
-      </article>
+      </a>
 
-      <article class="store-card">
+      <a class="store-card" href="https://wa.me/5491160224830?text=Hola!%20Vi%20Zeta%20Cafe%20en%20CeliGo%20y%20quiero%20consultar" target="_blank" rel="noopener" data-name="zeta cafe cafeteria especialidad" data-cat="cafeteria">
         <span class="badge">100% Sin TACC</span>
         <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80')"></div>
         <div class="store-content">
@@ -143,9 +146,9 @@
             <span>📍 0.8 km</span>
           </div>
         </div>
-      </article>
+      </a>
 
-      <article class="store-card">
+      <a class="store-card" href="https://wa.me/5491160224830?text=Hola!%20Vi%20Natural%20Market%20en%20CeliGo%20y%20quiero%20consultar" target="_blank" rel="noopener" data-name="natural market dietetica productos sin tacc" data-cat="dietetica">
         <span class="badge">100% Sin TACC</span>
         <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80')"></div>
         <div class="store-content">
@@ -160,9 +163,9 @@
             <span>📍 1.8 km</span>
           </div>
         </div>
-      </article>
+      </a>
 
-      <article class="store-card">
+      <a class="store-card" href="https://wa.me/5491160224830?text=Hola!%20Vi%20Dulce%20Sin%20en%20CeliGo%20y%20quiero%20consultar" target="_blank" rel="noopener" data-name="dulce sin heladeria sin gluten" data-cat="heladeria">
         <span class="badge badge-alt">Verificado</span>
         <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80')"></div>
         <div class="store-content">
@@ -177,9 +180,9 @@
             <span>📍 1.1 km</span>
           </div>
         </div>
-      </article>
+      </a>
 
-      <article class="store-card">
+      <a class="store-card" href="https://wa.me/5491160224830?text=Hola!%20Vi%20Verde%20Mesa%20en%20CeliGo%20y%20quiero%20consultar" target="_blank" rel="noopener" data-name="verde mesa restaurante cocina saludable" data-cat="restaurante">
         <span class="badge">100% Sin TACC</span>
         <div class="store-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80')"></div>
         <div class="store-content">
@@ -194,17 +197,58 @@
             <span>📍 3.2 km</span>
           </div>
         </div>
-      </article>
+      </a>
 
     </section>
 
-    <!-- BANNER ADHERÍ TU COMERCIO -->
+    <!-- B2B -->
     <section class="banner-b2b" id="comercio">
       <div>
         <h2>Adherí tu comercio gratis</h2>
         <p>Sumá tu local apto para celíacos, ofrecé un beneficio y recibí más clientes con CeliGo. Kit de bienvenida incluido.</p>
       </div>
-      <a href="#" class="btn-primary">Adherí tu comercio →</a>
+      <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20adherir%20mi%20comercio%20a%20CeliGo" class="btn-primary" target="_blank" rel="noopener">Adherí tu comercio →</a>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <h2 class="section-title faq-title">Preguntas frecuentes</h2>
+      <div class="section-line"></div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>¿Qué es CeliGo?</summary>
+          <p>CeliGo es una plataforma para celíacos: encontrás locales sin TACC cerca tuyo (dietéticas, restaurantes, panaderías, cafeterías) y con la tarjeta Socio accedés a descuentos exclusivos en los comercios adheridos.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿En qué me beneficia?</summary>
+          <p>Tenés un mapa de locales verificados, info de la comunidad y descuentos reales en cada compra al mostrar tu credencial digital.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuánto sale?</summary>
+          <p>La membresía CeliGo Socio cuesta <strong>$2.900 por mes</strong>. Podés cancelar cuando quieras.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Por qué me conviene tenerla?</summary>
+          <p>Porque el ahorro en descuentos suele superar el valor de la membresía, y además tenés un solo lugar para encontrar locales seguros cerca tuyo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo funciona?</summary>
+          <p>Solicitás tu tarjeta por WhatsApp, activás tu membresía y mostrás tu credencial digital en el local adherido para obtener el beneficio publicado.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo obtengo mi tarjeta? ¿Es de uso personal?</summary>
+          <p>Escribinos por WhatsApp y te guiamos. La tarjeta / credencial es de uso personal y no se comparte con terceros no suscriptos.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuántos descuentos puedo usar por mes?</summary>
+          <p>Podés usar los beneficios en los locales adheridos según lo que cada comercio publique. No hay un tope fijo de “veces por mes” a nivel plataforma; depende de cada local.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo adhiero mi comercio?</summary>
+          <p>Escribinos por WhatsApp con el nombre del local y el beneficio que querés ofrecer. La adhesión es gratis e incluye kit de bienvenida.</p>
+        </details>
+      </div>
     </section>
 
   </main>
@@ -217,22 +261,22 @@
           <img src="assets/logo-celigo.png" alt="CeliGo" class="brand-logo brand-logo-sm" onerror="this.style.display='none'">
           <span class="brand-text">Celi<span>Go</span></span>
         </a>
-        <p>Directorio de locales sin TACC y tarjeta de beneficios para celíacos.</p>
+        <p>Locales sin TACC cerca tuyo y beneficios exclusivos para celíacos.</p>
       </div>
       <div class="footer-col">
         <h4>Para vos</h4>
-        <a href="#socio">Ser Socio</a>
+        <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20solicitar%20mi%20tarjeta%20CeliGo" target="_blank" rel="noopener">Ser Socio</a>
         <a href="#locales">Locales cerca</a>
-        <a href="#categorias">Categorías</a>
+        <a href="#faq">Preguntas frecuentes</a>
       </div>
       <div class="footer-col">
         <h4>Para comercios</h4>
-        <a href="#comercio">Adherí tu comercio</a>
-        <a href="#">Kit Go</a>
+        <a href="https://wa.me/5491160224830?text=Hola!%20Quiero%20adherir%20mi%20comercio%20a%20CeliGo" target="_blank" rel="noopener">Adherí tu comercio</a>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Términos y Condiciones</a>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5491160224830" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#">Términos</a>
         <a href="#">Privacidad</a>
       </div>
     </div>
