@@ -316,23 +316,11 @@ img { display: block; max-width: 100%; }
   z-index: 1;
 }
 .store-content { padding: 16px; }
-.store-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4px;
-  gap: 8px;
-}
 .store-title {
   font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-}
-.rating {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #F59E0B;
-  flex-shrink: 0;
+  margin-bottom: 4px;
 }
 .store-subtitle {
   font-size: 0.85rem;
@@ -347,15 +335,6 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
   padding: 4px 8px;
   border-radius: 6px;
-  margin-bottom: 12px;
-}
-.store-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  border-top: 1px solid var(--border);
-  padding-top: 10px;
 }
 
 .banner-b2b {
